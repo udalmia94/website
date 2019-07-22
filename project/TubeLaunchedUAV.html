@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- TITLE OF SITE-->
+        <title>Tube-launched UAV - Ujjwal Dalmia</title>
+
+        <!-- META TAG -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Details of senior design project - tube-launched electric-powered fixed-wing UAV.">
+        <meta name="author" content="Ujjwal Dalmia">
+		<meta name="keywords" content="Aerodynamics,Computational Fluid Dynamics,Airplane,Plane,Purdue,Rocket,Science,Unmanned Aerial Vehicle,Tube Launch,Equations of Motion">
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WXNWKGF');</script>
+		<!-- End Google Tag Manager -->
+
+        <!-- FAVICON -->
+        <link rel="icon" href="../assets/images/favicon.ico">
+
+        <!-- ========================================
+                Stylesheets
+        ==========================================-->
+
+        <!-- MATERIALIZE CORE CSS -->
+        <link href="../assets/css/materialize.min.css" rel="stylesheet">
+
+
+        <!-- ADDITIONAL CSS -->
+        <link rel="stylesheet" href="../assets/css/animate.css">
+
+
+        <!-- FONTS -->
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+        <!--FONTAWESOME CSS-->
+        <link href="../assets/icons/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+        <!-- CUSTOM STYLE -->
+        <link href="../assets/css/style.css" rel="stylesheet">
+
+
+        <!-- RESPONSIVE CSS-->
+        <link href="../assets/css/responsive.css" rel="stylesheet">
+
+        <!-- COLORS -->
+        <!--<link rel="alternate stylesheet" href="../assets/css/colors/red.css" title="red">-->
+        <!--<link rel="alternate stylesheet" href="../assets/css/colors/purple.css" title="purple">-->
+        <!--<link rel="alternate stylesheet" href="../assets/css/colors/orange.css" title="orange">-->
+        <!--<link rel="alternate stylesheet" href="../assets/css/colors/green.css" title="green">        -->
+        <!--<link rel="stylesheet" href="../assets/css/colors/lime.css" title="lime">-->
+
+        <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif] -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXNWKGF"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+        <!-- Start Container-->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+            <!-- =========================================
+                           SIDEBAR
+            ==========================================-->
+                <!-- Start Sidebar -->
+                <aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
+                    <!--  Sidebar row -->
+                    <div class="row">
+                        <!--  top section   -->
+                        <div class="heading">
+                            <!-- ====================
+                                      IMAGE
+                            ==========================-->
+                            <div class="feature-img">
+                                <a href="../index.html"><img src="../assets/images/profile-img.jpg" class="responsive-img" alt=""></a>
+                            </div>
+                            <!-- =========================================
+                                       NAVIGATION
+                            ==========================================-->
+                            <!-- <div class=" nav-icon">
+                                <nav>
+                                    <div class="nav-wrapper">
+                                      <ul id="nav-mobile" class="side-nav">
+                                        <li><a href="index.html">Resume</a></li>
+                                        <li><a href="project.html">Projects</a></li>
+                                        <li><a href="cover-latter.html">Cover Letter</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                      </ul>
+                                      <a href="#" data-activates="nav-mobile" class="button-collapse  "><i class="mdi-navigation-menu"></i></a>
+                                    </div>
+                                </nav>
+                            </div>  -->
+                            <!-- ========================================
+                                       NAME AND TAGLINE
+                            ==========================================-->
+                            <div class="title col s12 m12 l11 center  wow fadeIn" data-wow-delay="0.1s">
+                                <a href="../index.html" title="Home"><h2>Ujjwal Dalmia</h2> <!-- title name -->
+                                <span>Aerodynamicist and CFD Engineer</span></a>  <!-- tagline -->
+                            </div>
+                        </div>
+                         <!-- sidebar info -->
+                        <div class="col l12 m12 s12 sort-info sidebar-item">
+                            <div class="row">
+                                <div class="col m12 s12 l3 icon"> <!-- icon -->
+                                   <i class="fa fa-user"></i>
+                                </div>
+                                <div class="col m12 s12 l9 info wow fadeIn a1" data-wow-delay="0.1s" > <!-- text -->
+                                    <div class="section-item-details">
+                                        <p>I am a passionate Aerospace Engineer with ambitions to work on revolutionary aerodynamics
+										research and development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MOBILE NUMBER -->
+                        <div class="col l12 m12 s12  mobile sidebar-item">
+                            <div class="row">
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-phone"></i> <!-- icon -->
+                                </div>
+                                <div class="col m12 s12 l9 info wow fadeIn a2" data-wow-delay="0.1s" >
+                                    <div class="section-item-details">
+                                        <div class="work">
+                                            <h4><a href="tel:765-476-3292">(765)-476-3292</a></h4> <!-- Number -->
+                                            <span>Mobile (U.S.)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  EMAIL -->
+                        <div class="col l12 m12 s12  email sidebar-item ">
+                            <div class="row">
+                                <div class="col m12 s12 l3 icon">
+                                    <i class="fa fa-envelope"></i> <!-- icon -->
+                                </div>
+                                <div class="col m12 s12 l9 info wow fadeIn a3" data-wow-delay="0.1s">
+                                    <div class="section-item-details">
+                                        <div class="work">
+                                            <h4><a href="mailto:udalmia@stanford.edu">udalmia@stanford.edu</a></h4> <!-- Email -->
+                                            <span>Work</span> <br>
+                                        </div>
+                                        <div class="personal">
+                                            <h4><a href="mailto:udalmia@gmail.com">udalmia@gmail.com</a></h4> <!-- Email -->
+                                            <span>Personal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ADDRESS  -->
+                       <!--  <div class="col l12 m12 s12  address sidebar-item ">
+                            <div class="row">
+                                <div class="col l3 m12  s12 icon">
+                                    <i class="fa fa-home"></i> <!-- icon
+                                </div>
+                                <div class="col m12 s12 l9 info wow fadeIn a4" data-wow-delay="0.4s">
+                                    <div class="section-item-details">
+                                        <div class="address-details"> <!-- address
+                                            <h4>45 N Salisbury St. <span>Apt. 11<br>
+                                            West Lafayette, <br>IN - 47906</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- SKILLS -->
+                        <div class="col l12 m12 s12  skills sidebar-item" >
+                            <div class="row">
+                                <div class="col m12 l3 s12 icon">
+                                    <i class="fa fa-wrench" aria-hidden="true"></i><!-- <i class="fa fa-calendar-o"></i> <!-- icon -->
+                                </div>
+                                 <!-- Skills -->
+                                <div class="col m12 l9 s12 skill-line a5 wow fadeIn" data-wow-delay="0.1s">
+                                    <h3>Skills & Certifications</h3>
+
+                                    <h4>Computational Fluid Dynamics (CFD):</h4>
+									<h5>STAR CCM+, Pointwise, Stanford SU2, Tecplot, ANSYS Fluent, DLR TAU<br><br>1000+ hours of experience with CFD work</h5>
+
+                                    <h4>Other Software:</h4>
+									<h5>NX, CATIA (including Fitting, Kinematics and CAM), Creo, ANSYS Structures</h5>
+
+                                    <h4>Programming Languages:</h4>
+									<h5>Proficient with MATLAB<br>Working knowledge of Java and HTML<br>Familiar with BASH, FORTRAN, C++</h5>
+
+									<h4>Certifications:</h4>
+									<h5>Private Pilot's License</h5>
+
+                                    <!-- <span>SQL</span>
+                                    <div class="progress">
+                                        <div class="determinate">40%</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>   <!-- end row -->
+                </aside><!-- end sidebar -->
+
+
+
+                <section class="col s12 m12 l8 section">
+                  <div class="row">
+			                 <div class="section-wrapper z-depth-1 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="col s12 m12 l10 website right" >
+                                <div class="row">
+                                    <div class="col s12 m12 l6">
+                                       <span><a target="_newtab" href="https://drive.google.com/open?id=0Bzpoa3Gh1jerZUZBdUVpdV9salE">
+									                                Download Resume <i class="fa fa-external-link"></i></a></span>
+                                    </div>
+                                    <div class="col col s12 m12 l6">
+                                      <span><a target="_newtab" href="https://www.linkedin.com/in/udalmia">
+										                     LinkedIn Profile <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="project-section-wrapper z-depth-1">
+
+                                  <div class="project-custom-content col s12 m12 l12 wow fadeIn a1" data-wow-delay="0.1s" >
+                                    <h1>Tube Launched Electric Powered Fixed Wing UAV</h1>
+                                    <h4><a href="https://engineering.purdue.edu/AAE/academics/courses/descriptions/AAE451.html" target="_newtab">
+                                      AAE 451: Aircraft Design (Senior Design Project) <i class="fa fa-external-link"></i></a></h4>
+                                    <div class="project-custom-content-wrapper col s12 m12 l12 wow fadeIn a2" data-wow-delay="0.1s" >
+									<p style="text-align:center!important;margin-top:0pt!important;">
+  									<a href="Team4_FinalDesignReport.pdf" target="_newtab" id="pr"><span>Design Report</span> <i class="fa fa-link"></i></a></p>
+									<p><span>Task: </span>The challenge was to design, build, and flight test a tube-launched, electric powered, remotely
+                     piloted fixed-winged aircraft that can satisfy the mission requirements. Details of the requirements can be found in
+                       the project's <a href="UAV_RFP.pdf" target="_newtab">Request for Proposal (RFP)<i class="fa fa-link"></i></a>.</p>
+                  <div class="col s12 m12 l6"><img src="images/TubeLaunchedUAV/finalDesign.png" class="responsive-img" alt=""></div>
+									<div class="col s12 m12 l6"><img src="images/TubeLaunchedUAV/finalAircraft.jpg" class="responsive-img" alt=""></div>
+									<h6>The final aircraft design (left) and the aircraft that flew (right)</h6>
+
+                  <p><span>Important Contributions<br></span>
+
+                  <span style="font-size:10pt;">Aerodynamic Design</span><br>
+									Since the challenge was to tube-launch a fixed-wing aircraft, and the tube size was specified, this directly put constraints
+                  on the size of the wings. The wings had to be within span and chord limits that would allow it to fit in the launch tube.
+                  Thus, selecting a good airfoil became paramount to the success of our UAV since a good airfoil would give more room for changes
+                  in other aspects of the wing design (like span). <b>In order to select the airfoil, I came up with a selection process,
+                  depicted in the flowchart, along with certain criteria that can be seen below.</b> Based on this selection process, the
+                  <a href="http://m-selig.ae.illinois.edu/ads/afplots/s1210.gif" target="_newtab">Selig S1210 <i class="fa fa-external-link"></i></a>
+                  airfoil was selected. Details can be found in the <a href="#pr">design report</a>.</p>
+									<div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/airfoilSelection.png" class="responsive-img" alt=""></div>
+									<h6>Criteria for selecting an airfoil and flowchart depicting the airfoil selection process.</h6>
+                  <div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/wingDesign.png" class="responsive-img" alt=""></div>
+                  <h6>Other aspects of the wing design were dictated by tube-size and manufacturing constraints. Details of the 3D wing
+                    can be seen here.</h6>
+
+									<p><span style="font-size:10pt;">XFLR5 & CFD Analysis</span><br>During the design and analysis phase it was important to
+                    analyze the aerodynamic characteristics of the UAV so other sub-systems, especially controls, could work on their
+                    design and use the correct aerodynamic properties of the aircraft. <b>XFLR5 was the primary analysis tool</b> used to determine
+                    airfoil/wing performance in conditions that we expected the UAV to fly in. Multiple designs were tested before the final
+                    design was selected. Despite the quick, and somewhat reliable lift estimates provided by XFLR5, it did not provide
+                    reliable estimates of drag. Therefore, <b>I ran a CFD analysis of the final design simulating flow over different angles
+                    of attack in order to determine the necessary aerodynamic coefficients.</b> Once again, I employed macros to increase my
+                    productivity. A snapshot of one of the simulations can be seen below.</p>
+                  <div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/UAV_CFD.png" class="responsive-img" alt=""></div>
+  								<h6>CFD simulation of final aircraft design with streamlines and pressure distribution over the UAV surface.</h6>
+
+                  <p><span style="font-size:10pt;">Tail Design (Individual Trade Study)</span><br>As part of the deliverables for the class
+                    was an Individual Trade Study where each student would study the merits and demerits of a possible modification that could
+                    improve the final design. Since our tail design was rather clumsy and bulky, I took up the study of trade-off between
+                    different tail designs.<br>The original tail (pictured below) was made of wood and foam and needed a complex folding
+                    mechanism for the stabilizers to fit in the launch tube. Instead of this I proposed attaching a boom to mount the
+                    stabilizers giving us more room inside the tube to fit the vertical and horizontal stabilizers. A boom also gave us more
+                    flexibility with changing the moment arm for the stabilizers without adding too much weight. <b>I plotted the weight vs
+                    length of moment arm (that affects the volume coefficient, V<sub>V</sub>, in the graphs below) in order to evaluate the
+                    designs.</b> From the plots, it's clear that there is a reduction in weight with the new design and therefore the new design
+                    was implemented on the final aircraft. <b>Details of the analysis and its impact can be found in
+                    <a href="IndividualTradeStudy.pdf" target="_newtab">this report</a>.</b></p>
+                  <div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/ITS_tailDesign.png" class="responsive-img" alt=""></div>
+  								<h6>Original tail design (left and top right) and the alternative design evaluated (bottom right)</h6>
+                  <div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/ITS_weightvsspan.png" class="responsive-img" alt=""></div>
+                  <h6>Vertical stabilizer sizing vs Weight for Original (left) and alternative (right) design for different volume coefficients.</h6>
+
+                  <p><span style="font-size:10pt;">Equations of Motion for launch and constraint diagram</span><br>Since the launch section
+                    of the flight profile is not common, we could not find the EOMs that would govern the vehicle dynamics in that phase of flight.
+                    In order to be confident about our design, we decided to derive the EOMs and calculate the flight profile using MATLAB.
+                    <b>I worked with a teammate, Daniel Ellinwood, to derive the EOMs and plot the flight profile that can be seen below.
+                    This analysis enabled us to tweak our launch system to give us better ground clearance in the launch phase.</b><br>Earlier in the
+                    design process I had performed a similar analysis to determine the power loading and wing loading constraints imposed by the
+                    launch system.</p>
+                  <div class="col s12 m12 l12"><img src="images/TubeLaunchedUAV/flightProfile.png" class="responsive-img" alt=""></div>
+  								<h6>Estimated flight profile upon launch from tube calculated based on EOMs we derived.</h6>
+
+                  <p>While these were my design contributions to the project, every member of the team was involved in the build
+                    phase. Having worked with composite materials before (at Formula SAE), I lead the team's layups of fibre glass
+                    on the foam wings. In the build phase I learnt a lot about dealing with other materials, and some of the practical aspects
+                    of UAV building that I previously was not aware of. <b>When the UAV took flight, that was the most satisfying moment of my life
+                    and reinforced my will to continue working as an engineer and to transform the world.</b></p>
+                  <!-- Video
+                  <video width="360" style="display:block; margin: 0 auto;" src="flightTest.mov" preload controls>This video could not be loaded.</video>-->
+                  <iframe width="560" height="315" style="display:block; margin: 0 auto;" src="https://www.youtube.com/embed/A6bABN5l3w4?rel=0"
+                  frameborder="0" allowfullscreen></iframe>
+                  <h6>The first flight test of the UAV where is successfully took flight. Out of the 4 teams in the class,
+                    only our team had a successful flight. This was the happiest moment of my life, and is a testament of my desire to be an engineer.</h6>
+									<p><span>For more details about the UAV and the project please refer to the <a href="#pr">Design Report.</a></span>
+								</div>
+                            </div>
+
+
+
+
+                    </div><!-- end row -->
+                    <div class="project-section-wrapper z-depth-1">
+                      <div class="project-custom-content col s12 m12 l12 wow fadeIn a1" data-wow-delay="0.1s">
+                        <h1 style="padding:0px 0px 10pt 0px;">Testimonials</h1>
+                        <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.1s">
+                            <p style="font-size:11pt;">
+                              Each semester, Purdue University School Aeronautics and Astronautics offers an Aircraft Design course, AAE 451, aimed to
+                              expose students to aircraft design principles, emerging aerospace technologies, advanced manufacturing operations, and
+                              variant aerospace platforms relevant to the aerospace industry today. During the fall semester especially, AAE 451
+                              is oriented to explore small unmanned aircraft systems (SUAS) design and select low-altitude operations.
+                              Each student is given the opportunity to explore and grow in fundamental aerospace disciplines (e.g. aerodynamics,
+                              dynamics and controls, propulsion, structures) and project management to produce efficient aerospace products on-demand.<br>
+                              Ujjwal was a student from the fall 2016 semester of AAE 451 and he exemplified high aptitude for design and project
+                              management during team and individual assessments throughout the course. His team consisted of the most diverse students
+                              in the class. Despite communication challenges, his team was able to produce the most innovative aircraft of the course.
+                              Ujjwal and his teammates produced an aircraft consisting of a foamboard fuselage, fiberglass reinforced Styrofoam wings,
+                              commercial-of-the-shelf (COTS) propulsion system [selected to design specifications], and 3-D printed mechanisms and parts.
+                              Ujjwal and his teammates address the Request for Proposal (RFP) for the course to produce an aircraft with a deployable wing
+                              capable of tube-launch operations. He and his teammates received satisfactory in majority of the deliverable categories and
+                              was the only team of six teams total to achieve flight on the first day of testing. Ujjwal displayed great poise and leadership
+                              to propel his team to achieve the highest marks of all teams participating in the RFP despite aircraft redesign due to
+                              destruction during pre-flight.<br>Ujjwal, by the end of the course, became more proficient in aircraft design and project
+                              management and is well-equipped to make a difference for any aerospace related organization in the future.<br>
+                              <a href="BrandonTestimonial.pdf" target="_newtab">Testimonial on letter head <i class="fa fa-external-link"></i></a><br>
+                              <b>-Brandon Sells, Teaching Assistant</b></p>
+                        </div>
+                        <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.1s">
+                            <p style="font-size:11pt;">Ujjwal was a fantastic contributor to our senior design team. In particular,
+                              his work on the aerodynamics of our tube-launched UAV was extremely thorough,
+                              and he was able to present his analysis clearly in both formal and informal settings.
+                              In addition to his technical contributions to the project, Ujjwal also greatly contributed
+                              to the overall team experience with a positive attitude and willingness to help beyond his
+                              own responsibilities. I will fondly remember all of the incredibly late nights that led
+                              to the successful launch of our aircraft, and would jump at the chance to work with Ujjwal
+                              again in the future.<br><b>-Alex Sechtig, Teammate</b></p>
+                        </div>
+                        <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.1s">
+                            <p style="font-size:11pt;">Ujjwal was one of the best members of the team. He worked smart and produced
+                               quality analyses quickly. Our team was very fortunate that he was a member because I am sure our project
+                               would not have concluded so well otherwise.<br><b>-Daniel Ellinwood, Teammate</b></p>
+                        </div>
+                        <!-- <div class="custom-content-wrapper wow fadeIn a2" data-wow-delay="0.1s">
+                            <p style="font-size:11pt;">Ujjwal was one of the best members of the team. He worked smart and
+                            produced quality analyses quickly.<br><b>Daniel Ellinwood, Teammate</b></p>
+                        </div> -->
+                      </div>
+                    </div>
+                    <!-- Back Button -->
+                    <div class="wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                      <div class="back-btn col s12">
+                        <a id="back-button" class="btn btn-info waves-effect" href="../project.html" style="display: inline;"><i class="fa fa-long-arrow-left"></i> Go Back </a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </section><!-- end section -->
+            </div> <!-- end row -->
+        </div>  <!-- end container -->
+
+ <!--=====================
+                JavaScript
+        ===================== -->
+        <!-- Jquery core js-->
+        <script src="../assets/js/jquery.min.js"></script>
+
+        <!-- materialize js-->
+        <script src="../assets/js/materialize.min.js"></script>
+
+        <!-- wow js-->
+        <script src="../assets/js/wow.min.js"></script>
+
+        <!-- Masonry js-->
+        <script src="../assets/js/masonry.pkgd.js"></script>
+
+        <script src="../assets/js/validator.min.js"></script>
+
+        <!-- Customized js -->
+        <script src="../assets/js/init.js"></script>
+
+    </body>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CreativeWork/EngineeringDesign",
+  "author": "Ujjwal Dalmia",
+  "name": "Tube Launched Electric Powered Fixed Wing UAV",
+  "educationalUse": "Senior Design Project",
+  "about": ["Computational Fluid Dynamics","Aircraft","Unmanned Aerial Vehicle"],
+    "sponsor": [
+    {
+    	"@type": "CollegeOrUniversity",
+        "name": "Purdue University",
+        "url": "http://www.purdue.edu/"
+    }],
+    "description": "•	Teamed with seven students to design and build a tube launched, fixed wing, electric powered UAV.
+•	Led the design of aerodynamics of the airplane – conducted CFD analysis in XFLR5 and Star-CCM+.
+•	Brainstormed and implemented ideas to fit the wings in the launch tube and deploy the wings upon launch.
+•	Investigated simpler tail attachment mechanism in an Individual Trade Study.
+•	Analyzed Launch Dynamics with Equations of Motion solved using MATLAB to determine launch constraints on the Constraint Diagram."
+}
+</script>
+</html>
